@@ -28,40 +28,44 @@
         </nav>
     </header>
 
-    <div class="ds-banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-            <figure>
-              <img src="assets/images/profile-image.jpg">
-            </figure>
-          </div>
-          <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
-            <section>
-                <h1>
-                  <span>HI THERE</span>
-                  I am Maria Eloissa M. Andal <br> UI/UX DESIGNER + DEVELOPER based in Philippines.
-                </h1>
-                <ul class="ds-numbervalulist">
-                  <li>
-                    <strong>6+</strong>
-                    <span>Experience</span>
-                  </li>
-                  <li>
-                    <strong>89</strong>
-                    <span>Projects</span>
-                  </li>
-                  <li>
-                    <strong>52</strong>
-                    <span>Happy Clients</span>
-                  </li>
-                </ul>
-            </section>
-          </div>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-image.png" alt="Profile Picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">HI THERE</p>
+        <h1 class="title">I am Maria Eloissa M. Andal</h1>
+        <p class="section__text__p2"> UI/UX DESIGNER + DEVELOPER based in Philippines.</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/cv_madz_01.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My Linkedin Profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="location.href='https://github.com'"
+          />
         </div>
       </div>
-    </div>
-
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
