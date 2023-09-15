@@ -1,0 +1,240 @@
+/* Whole document */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+
+/* Headr Style */
+header{ 
+	position: fixed; 
+	top: 0; width: 100%; 
+	z-index: 3; 
+	background-color: #FFF; 
+	padding: 10px 0;
+	transition-delay: 0s;
+	transition-duration: 0.4s;
+	transition-property: all;
+	transition-timing-function: ease;
+ }
+
+
+ html {font-family: 'Inter', sans-serif;background-color:#FFF}
+ body {font-family: 'Inter', sans-serif;overflow-x: hidden; background-color:#FFF; font-weight:400;font-style: normal; color:#373737; font-size:14px}
+ a,a:hover,a:focus,i,input,button,input:focus,.transition {text-decoration: none;outline: none;transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease;box-shadow: none;}
+ a{color: #000}
+ iframe {border: 0;outline: none;}
+ ::-moz-selection {background:#000;text-shadow: none;color:#FFF}
+ ::selection {background:#000;text-shadow: none;color:#FFF}
+ img {max-width: 100%;border: none;outline: none;height: auto;}
+ input,textarea {border-radius: 0;resize: none;}
+ ul {padding: 0;margin: 0;}
+ font-face { font-family: 'Inter', sans-serif;}
+ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {background-color: transparent;background-image: none;color:#000;}
+ /* 1.2 Typography */
+ h1,h2,h3,h4,h5,h6 {font-family: 'Inter', sans-serif;}
+ figure{ margin: 0 }
+ svg,img { max-width: 100%; height: auto; }
+ 
+
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* Transition */
+
+
+
+/* desktop-nav */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+
+.logo {
+  font-size: 2rem;
+}
+
+.ds-logo { 
+  text-transform: uppercase; 
+  font-size: 18px; 
+  letter-spacing: 3px; 
+  color: #000; display: flex; 
+  align-items: center; 
+}
+
+.ds-logo span { 
+  display:flex; 
+  align-items: center; 
+  justify-content: center; 
+  width: 40px; height: 40px; 
+  background-color: #000; 
+  border-radius: 4px; 
+  color: #FFF; 
+  font-size: 22px; 
+  font-weight: 600; 
+  text-align: center; 
+  margin-right: 12px; }
+
+.ds-logo:hover { 
+  color: #000; 
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* Hamburger Menu */
+
+#hamburger-nav {
+  display: flex; 
+  position: right;
+  align-items: center; 
+}
+
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  position: right;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* Banner */
+
+.ds-banner section{ 
+  padding-left: 70px; 
+  padding-right: 100px; 
+}
+
+.ds-banner section h1 span{ 
+  display: block; 
+  text-transform: uppercase; 
+  letter-spacing: 1px;  
+  font-weight: 500; 
+  font-size: 16px; 
+  padding-bottom: 30px; 
+}
+
+.ds-banner section h1{ 
+  font-weight: 600; 
+  font-size: 48px; 
+  line-height: 60px; 
+  color: #000; 
+}
+
+.ds-numbervalulist{ 
+  list-style: none; 
+  display: flex; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  margin: 0; 
+  padding: 0; 
+  margin-top: 60px; 
+}
+
+.ds-numbervalulist li{ 
+  margin-right: 60px; 
+}
+
+.ds-numbervalulist li:last-child{ 
+  margin-right: 0; 
+}
+.ds-numbervalulist strong{
+   display: block; 
+   color: #F26464;
+    font-size: 36px; 
+    ont-weight: 800; 
+  }
+.ds-numbervalulist span{ 
+  font-size: 16px; 
+  letter-spacing: 1px; }
+
+
