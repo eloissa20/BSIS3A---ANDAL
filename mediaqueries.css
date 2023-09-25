@@ -8,3 +8,10 @@
     }
   }
   
+
+  @media (max-width: 768px) {
+    .nav-links-mobile li a.active {
+        color: #99627A; /* Change the color for the active link in mobile navigation */
+        font-weight: bold; /* Make the active link bold in mobile navigation, if desired */
+    }
+  }
